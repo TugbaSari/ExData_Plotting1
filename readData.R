@@ -2,8 +2,9 @@
 ## Use sqldf package to filter out unnecessary rows during read to improve read speed and memory usage.
 if("sqldf" %in% rownames(installed.packages()) == FALSE) {
   install.packages("sqldf")
-  library(sqldf)
 }
+
+library(sqldf)
 
 readHouseholdPowerConsumptionData <- function(columns = "*") {
   ## read power consumption data for 2 days
@@ -13,4 +14,3 @@ readHouseholdPowerConsumptionData <- function(columns = "*") {
                   sep = ";"
               )
 }
-
