@@ -19,4 +19,3 @@ dev.off()
 
 # Cleanup the workspace
 remove(household_power_cons)
-remove(readHouseholdPowerConsumptionData)
